@@ -175,6 +175,14 @@ a {
   padding: 1.2rem 2.4rem;
 }
 
+.hero__main--heading {
+  animation: heroHeaderAnimation 1s ease-in;
+}
+
+.hero__main--span {
+  animation: heroHeaderSpanAnimation 1.5s ease-in;
+}
+
 .hero__background--video--playing {
   position: absolute;
   height: auto;
@@ -191,3 +199,33 @@ a {
   font-weight: 400;
   color: var(--tertiary-color);
 }
+
+@keyframes heroHeaderAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroHeaderSpanAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+/* ----------------------------------------------------------- */
+/* //////////////////// Section Restaurant Components ////////////////////*/
+/* ----------------------------------------------------------- */
