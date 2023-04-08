@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./styles/img/Heritage-logo.png" />
+    <link rel="apple-touch-icon" href="./styles/img/Heritage-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,15 +13,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/app.css" />
+    <link rel="stylesheet" href="./styles/mediaQueries.css" />
     <script defer src="./src/script.js"></script>
     <title>Heritage</title>
   </head>
   <body>
     <header id="header">
+      <video
+        class="hero__background--video--playing"
+        autoplay
+        loop
+        muted
+        plays-inline
+      >
+        <source
+          src="./styles/img/video/pexels-bedrijfsfilmspecialistnl-2887459-1920x1080-25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+
       <nav id="navigation">
         <div class="navigation__img--logo">
           <img
-            src="./styles/img/Heritage-logo.png"
+            src="./styles/img/Heritage-logo-removebg-preview.png"
             alt="The logo of the restaurant."
           />
         </div>
@@ -30,12 +46,23 @@
         </div>
 
         <ul class="navigation__hamburger--links hidden">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Menu</li>
-          <li>Contact us</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Menu </a></li>
+          <li><a href="#">Reserve a table</a></li>
         </ul>
       </nav>
+      <section class="hero">
+        <div class="hero__main-text--heading-primary">
+          <h1 class="heading-primary">HERITAGE</h1>
+          <span>Since 1785</span>
+        </div>
+      </section>
     </header>
+
+    <script
+      src="https://kit.fontawesome.com/801fe15e34.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

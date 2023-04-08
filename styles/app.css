@@ -40,6 +40,17 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  color: var(--tertiary-color);
+}
+
 /* ----------------------------------------------------------- */
 /* //////////////////// Navigation Components ////////////////////*/
 /* ----------------------------------------------------------- */
@@ -48,11 +59,17 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1.2rem 2.4rem;
 }
 
 .navigation__img--logo img {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.fa-utensils {
+  font-size: 5rem;
+  color: var(--tertiary-color);
 }
 
 .navigation__hamburger {
@@ -68,6 +85,7 @@ ul {
   right: 3rem;
   padding: 1rem;
   border-radius: 50%;
+  z-index: 10;
 }
 
 .line {
@@ -83,13 +101,17 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 133, 0.8)
+  );
   height: 100vh;
   width: 50%;
   position: absolute;
   top: 0;
   left: 50%;
-  z-index: -1;
+  z-index: 2;
   animation: navigationAnimation 0.35s ease-in;
 }
 
@@ -100,6 +122,31 @@ ul {
 .navigation__hamburger--links li {
   font-size: 2rem;
   color: var(--tertiary-color);
+}
+
+.navigation__hamburger--links li a {
+  position: relative;
+  color: var(--gray-color);
+}
+
+.navigation__hamburger--links li a:link::after,
+.navigation__hamburger--links li a:visited::after {
+  position: absolute;
+  content: '';
+  background-color: var(--tertiary-color);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: -1;
+}
+
+.navigation__hamburger--links li a:hover::after,
+.navigation__hamburger--links li a:active::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @keyframes navigationAnimation {
@@ -118,4 +165,29 @@ ul {
 
 #header {
   height: 100vh;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 1.2rem 2.4rem;
+}
+
+.hero__background--video--playing {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  z-index: -10;
+}
+
+.hero__main-text--heading-primary {
+  padding: 4rem;
+}
+
+.hero__main-text--heading-primary span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--tertiary-color);
 }
