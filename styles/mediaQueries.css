@@ -14,9 +14,30 @@
 }
 
 @media screen and (max-width: 1410px) {
-  /* .hero__main-text--heading-primary {
-    margin-bottom: 15rem;
-  } */
+  /* TODO: */
+
+  .restaurant__content--btn {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .restaurant__content--btn {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .restaurant__content__text--box--text {
+    color: var(--gray-color);
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .restaurant__content--btn {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,22 +46,91 @@
     top: 40%;
     padding: 4rem 0 4rem 10rem;
   }
+
+  .restaurant__content--btn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .restaurant__content__heading--box__span--emotion,
+  .restaurant__content__heading--box__span--location,
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .restaurant__content__text--box--heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .restaurant__content__text--box--text {
+    margin-bottom: 1rem;
+  }
+
+  .restaurant__content--btn {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .restaurant__content--btn {
+    font-size: 1.4rem;
+    letter-spacing: 1rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .hero__main-text--heading-primary {
+    top: 70%;
+  }
+
   .hero__main--heading {
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
     color: var(--tertiary-color);
+  }
+
+  .restaurant__content__heading--box__span--emotion,
+  .restaurant__content__heading--box__span--location,
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .restaurant--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .restaurant__content__heading--box {
+    display: flex;
+    align-items: center;
+  }
+
+  .restaurant__content--btn {
+    font-size: 1.4rem;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .restaurant__content__img--box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .restaurant__content__img--box img {
+    width: 70%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 800px) {
   .hero__main-text--heading-primary {
-    position: absolute;
-    top: 30%;
-    padding: 4rem 0 4rem 10rem;
+    top: 70%;
   }
   .hero__main--heading {
     font-size: 3rem;
@@ -52,8 +142,12 @@
 
 @media screen and (max-width: 750px) {
   .hero__main-text--heading-primary {
-    position: absolute;
-    top: 20%;
-    padding: 4rem 0 4rem 10rem;
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .restaurant__content--btn {
+    letter-spacing: 0.5rem;
   }
 }
