@@ -10,6 +10,10 @@ const toggleNavigationBar = function () {
   document
     .querySelector('.navigation__hamburger--links')
     .classList.toggle('hidden');
+
+  document.querySelector('.line-1').classList.toggle('line-1-clicked');
+  document.querySelector('.line-2').classList.toggle('line-2-clicked');
+  document.querySelector('.line-3').classList.toggle('line-3-clicked');
 };
 
 // INITALIZATION OF THE PAGE

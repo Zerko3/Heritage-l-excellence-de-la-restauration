@@ -96,6 +96,17 @@ a {
   transition: all 0.4s ease-in;
 }
 
+.line-1-clicked {
+  transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+}
+
+.line-2-clicked {
+  opacity: 0;
+}
+
+.line-3-clicked {
+  transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+}
 .navigation__hamburger--links {
   display: flex;
   flex-direction: column;
@@ -191,7 +202,7 @@ a {
 }
 
 .hero__main-text--heading-primary {
-  padding: 4rem;
+  padding: 4rem 0 4rem 10rem;
 }
 
 .hero__main-text--heading-primary span {
