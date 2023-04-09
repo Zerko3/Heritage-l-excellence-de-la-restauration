@@ -65,6 +65,10 @@ a {
   display: grid;
 }
 
+.grid--center-v {
+  align-items: center;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -196,6 +200,7 @@ a {
 /* ----------------------------------------------------------- */
 
 #header {
+  display: flex;
   height: 100svh;
 }
 
@@ -217,8 +222,11 @@ a {
 
 .hero__background--video--playing {
   position: absolute;
-  height: auto;
-  max-width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  width: 100vw;
   z-index: -10;
 }
 
