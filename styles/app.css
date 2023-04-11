@@ -294,11 +294,16 @@ a {
   margin-bottom: 2rem;
 }
 
+.restaurant__content__heading--box__main--heading {
+  animation: headingBoxLocationAnimation 0.4s ease-in;
+}
+
 .restaurant__content__heading--box__span--emotion {
   font-size: 3.6rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
   color: var(--gold-color);
+  animation: headingBoxSpanAnimation 0.4s ease-in;
 }
 
 .restaurant__content__heading--box__span--location {
@@ -307,6 +312,31 @@ a {
   letter-spacing: 1.2rem;
   margin-bottom: 2rem;
   color: var(--gray-color);
+  animation: headingBoxLocationAnimation 0.4s ease-in;
+}
+
+@keyframes headingBoxSpanAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes headingBoxLocationAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
 }
 
 .restaurant__content__text--box {
