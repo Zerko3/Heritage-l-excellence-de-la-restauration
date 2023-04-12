@@ -19,16 +19,10 @@ body {
   font-size: 62.5%;
   font-family: 'Playfair Display', serif;
 
-  /* Main color */
-  --primary-color: #28b485;
-
-  /* Secondary color */
-  --secondary-color: #7ed56f;
-
   /* Tertiary color */
   --tertiary-color: #f7f7f7;
 
-  /* Golden color */
+  /* Golden color / Main color */
   --gold-color: #bcaf87;
 
   /* White color */
@@ -440,7 +434,7 @@ a {
 }
 
 /* ----------------------------------------------------------- */
-/* /////////////////// Section Menue Components ///////////////*/
+/* /////////////////// Section Menu Components ///////////////*/
 /* ----------------------------------------------------------- */
 
 .section-menu {
@@ -469,8 +463,15 @@ a {
 }
 
 .menu__content__img--box img {
-  width: 70%;
+  width: 60%;
   height: auto;
+  position: relative;
+}
+
+.menu__content--chef {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
 }
 
 .menu__content__text--box__main--heading--box {
@@ -597,4 +598,66 @@ a {
     opacity: 100%;
     transform: translateY(0);
   }
+}
+
+/* ----------------------------------------------------------- */
+/* /////////////////// Section Chef Components ///////////////*/
+/* ----------------------------------------------------------- */
+
+.chef-section {
+  margin-top: 30rem;
+  padding-top: 10rem;
+}
+
+.chef-container {
+  padding: 0 3.2rem 0 3.2rem;
+  background-color: #f7f7f7af;
+}
+
+.menu__content__text--box__main--heading--box {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.chef__content__text--box__main--heading {
+  text-align: center;
+}
+
+.chef__content__text--box__main--heading--box__span-left {
+  content: '';
+  position: absolute;
+  width: 28%;
+  left: 0;
+  top: 50%;
+  height: 0.1rem;
+  background-color: var(--gold-color);
+}
+
+.chef__content__text--box__main--heading--box__span-right {
+  content: '';
+  position: absolute;
+  width: 28%;
+  right: 0;
+  top: 50%;
+  height: 0.1rem;
+  background-color: var(--gold-color);
+}
+
+.chef-container__above__text--para--bo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef__content__above__text--para--text {
+  color: var(--gray-color);
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.chef-container__chef--box--img--box img {
+  width: 70%;
+  height: auto;
 }
