@@ -483,6 +483,10 @@ a {
   font-size: 6.2rem;
 }
 
+.menu__content__text--box__main--heading--animation {
+  animation: menuSectionMainHeadingAnimation 1s ease-in;
+}
+
 .menu__content__text--box__main--heading--box__span-left {
   content: '';
   position: absolute;
@@ -581,4 +585,16 @@ a {
   transform: scaleX(1);
   transform-origin: right;
   background-color: var(--gray-color);
+}
+
+@keyframes menuSectionMainHeadingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }
