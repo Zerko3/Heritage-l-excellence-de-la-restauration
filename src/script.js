@@ -34,6 +34,8 @@ let observerVideo = new IntersectionObserver(
 
 let sectionAboutUs = document.querySelector('.section--restaurant');
 
+// TODO: ZAKAJ NE DELA TOGGLE V TEM PRIMERU!!!
+
 let observerSectionAboutUs = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
@@ -75,11 +77,35 @@ let observerSectionAboutUs = new IntersectionObserver(
   { threshold: 0.05 }
 );
 
+let menuMainHeading = document.querySelector('.section-menu');
+
+console.log(menuMainHeading);
+
+let menuMainHeadingObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio >= 0.05) {
+        document
+          .querySelector('.menu__content__text--box__main--heading ')
+          .classList.add('menu__content__text--box__main--heading--animation');
+      } else {
+        document
+          .querySelector('.menu__content__text--box__main--heading ')
+          .classList.remove(
+            'menu__content__text--box__main--heading--animation'
+          );
+      }
+    });
+  },
+  { threshold: 0.05 }
+);
+
 // INITALIZATION OF THE PAGE
 const init = function () {
   hamburger.addEventListener('click', toggleNavigationBar);
   observerVideo.observe(video);
   observerSectionAboutUs.observe(sectionAboutUs);
+  menuMainHeadingObserver.observe(menuMainHeading);
 };
 
 init();
