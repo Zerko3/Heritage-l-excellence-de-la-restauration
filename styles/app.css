@@ -88,8 +88,8 @@ a {
 
 .navigation__img--logo img {
   position: fixed;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .fa-utensils {
@@ -269,7 +269,7 @@ a {
 }
 
 /* ----------------------------------------------------------- */
-/* //////////////////// Section Restaurant Components ////////////////////*/
+/* ////////////// Section Restaurant Components ///////////////*/
 /* ----------------------------------------------------------- */
 
 .section--restaurant {
@@ -294,16 +294,11 @@ a {
   margin-bottom: 2rem;
 }
 
-.restaurant__content__heading--box__main--heading {
-  animation: headingBoxLocationAnimation 0.4s ease-in;
-}
-
 .restaurant__content__heading--box__span--emotion {
   font-size: 3.6rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
   color: var(--gold-color);
-  animation: headingBoxSpanAnimation 0.4s ease-in;
 }
 
 .restaurant__content__heading--box__span--location {
@@ -312,7 +307,17 @@ a {
   letter-spacing: 1.2rem;
   margin-bottom: 2rem;
   color: var(--gray-color);
-  animation: headingBoxLocationAnimation 0.4s ease-in;
+}
+
+.restaurant__content__heading--box__main--heading__animated {
+  animation: headingBoxLocationAnimation 1s ease-in;
+}
+
+.restaurant__content__heading--box__span--emotion__animated {
+  animation: headingBoxSpanAnimation 1s ease-in;
+}
+.restaurant__content__heading--box__span--location__animated {
+  animation: headingBoxLocationAnimation 1s ease-in;
 }
 
 @keyframes headingBoxSpanAnimation {
@@ -427,3 +432,7 @@ a {
   transform-origin: right;
   background-color: var(--gray-color);
 }
+
+/* ----------------------------------------------------------- */
+/* /////////////////// Section Menue Components ///////////////*/
+/* ----------------------------------------------------------- */
