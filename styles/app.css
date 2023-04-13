@@ -30,6 +30,9 @@ body {
 
   /* Gray color */
   --gray-color: #333;
+
+  /* Local Gray color */
+  --local-gray-color: #272f3c;
 }
 
 /* ----------------------------------------------------------- */
@@ -69,6 +72,10 @@ a {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 10rem !important;
 }
 
 /* ----------------------------------------------------------- */
@@ -607,6 +614,17 @@ a {
 .chef-section {
   margin-top: 30rem;
   padding-top: 10rem;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.chef-section--background-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bcaf872b;
+  height: 100%;
+  width: 50vw;
 }
 
 .chef-container {
@@ -643,13 +661,22 @@ a {
   background-color: var(--gold-color);
 }
 
-.chef-container__above__text--para--bo {
+.chef-container__above__text--para--box {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.chef-container__chef--box--text--box {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.chef__content__above__text--para--text {
+.chef__content__above__text--para--text,
+.chef__content__chef__text--para--text {
   color: var(--gray-color);
   font-size: 2rem;
   line-height: 1.7;
@@ -657,7 +684,159 @@ a {
   width: 70%;
 }
 
+.chef-container__chef--box--img--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .chef-container__chef--box--img--box img {
   width: 70%;
   height: auto;
+}
+
+/* ----------------------------------------------------------- */
+/* ////////////// Section Restaurant Components ///////////////*/
+/* ----------------------------------------------------------- */
+
+.the-restaurant-section {
+  padding-top: 8rem;
+}
+
+.restaurant-container {
+  padding: 0 3.2rem 0 3.2rem;
+}
+
+.restaurant-container__content--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 6.4rem;
+  background-color: var(--local-gray-color);
+}
+
+.restaurant-container__content__text--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant__content__text--box__main--heading {
+  color: var(--gold-color);
+  font-size: 6rem;
+  margin-bottom: 10rem;
+}
+
+.restaurant__content__text--para--text {
+  color: var(--tertiary-color);
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.the-restaurant__content--btn {
+  margin-top: 3rem;
+  position: relative;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  color: var(--gold-color);
+}
+
+.the-restaurant__content--btn:link::after,
+.the-restaurant__content--btn:visited::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  top: 1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: var(--tertiary-color);
+}
+
+.the-restaurant__content--btn:hover::after,
+.the-restaurant__content--btn:active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  top: 1;
+  transform: scaleX(1);
+  transform-origin: left;
+  background-color: var(--tertiary-color);
+}
+
+.the-restaurant__content--btn:link:before,
+.the-restaurant__content--btn:visited:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: var(--tertiary-color);
+}
+
+.the-restaurant__content--btn:hover:before,
+.the-restaurant__content--btn:active:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(1);
+  transform-origin: right;
+  background-color: var(--tertiary-color);
+}
+
+/* ----------------------------------------------------------- */
+/* //////////// Section Restaurant IMG Components /////////////*/
+/* ----------------------------------------------------------- */
+.restaurant-img-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 100vh;
+  background: url(./img/restaurant-interior-img-2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+
+.restaurant-img-section--background-color {
+  background-color: #f7f7f7af;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* background-color: #bcaf872b; */
+  height: 100%;
+  width: 50vw;
+  z-index: -1;
+}
+
+.restaurant-img-section-container__text--box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.restaurant-img__content__text--para--text {
+  color: var(--gray-color);
+  font-size: 2rem;
+  line-height: 1.7;
+  width: 40%;
 }
