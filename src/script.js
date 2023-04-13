@@ -5,7 +5,6 @@
 const hamburger = document.querySelector('.navigation__hamburger');
 
 const toggleNavigationBar = function () {
-  console.log('Clicked');
   document
     .querySelector('.navigation__hamburger--links')
     .classList.toggle('hidden');
