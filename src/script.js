@@ -78,8 +78,6 @@ let observerSectionAboutUs = new IntersectionObserver(
 
 let menuMainHeading = document.querySelector('.section-menu');
 
-console.log(menuMainHeading);
-
 let menuMainHeadingObserver = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
@@ -99,12 +97,50 @@ let menuMainHeadingObserver = new IntersectionObserver(
   { threshold: 0.05 }
 );
 
+let chefMainHeading = document.querySelector('.chef-section');
+
+let chefMainHeadingObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio >= 0.05) {
+        document
+          .querySelector('.chef__content__text--box__main--heading')
+          .classList.add('chef__content__text--box__main--heading--animation');
+      } else {
+        document
+          .querySelector('.chef__content__text--box__main--heading')
+          .classList.remove(
+            'chef__content__text--box__main--heading--animation'
+          );
+      }
+    });
+  },
+  { threshold: 0.05 }
+);
+
+let theRestaurantSection = document.querySelector('.the-restaurant-section');
+
+let theRestaurantSectionObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio >= 0.05) {
+        document
+          .querySelector('.the-restaurant-section')
+          .classList.add('the-restaurant-section--animation');
+      }
+    });
+  },
+  { threshold: 0.05 }
+);
+
 // INITALIZATION OF THE PAGE
 const init = function () {
   hamburger.addEventListener('click', toggleNavigationBar);
   observerVideo.observe(video);
   observerSectionAboutUs.observe(sectionAboutUs);
   menuMainHeadingObserver.observe(menuMainHeading);
+  chefMainHeadingObserver.observe(chefMainHeading);
+  theRestaurantSectionObserver.observe(theRestaurantSection);
 };
 
 init();
