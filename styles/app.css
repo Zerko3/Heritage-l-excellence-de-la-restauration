@@ -641,6 +641,10 @@ a {
   text-align: center;
 }
 
+.chef__content__text--box__main--heading--animation {
+  animation: chefSectionMainHeadingAnimation 1s ease-in;
+}
+
 .chef__content__text--box__main--heading--box__span-left {
   content: '';
   position: absolute;
@@ -695,12 +699,28 @@ a {
   height: auto;
 }
 
+@keyframes chefSectionMainHeadingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
 /* ----------------------------------------------------------- */
 /* ////////////// Section Restaurant Components ///////////////*/
 /* ----------------------------------------------------------- */
 
 .the-restaurant-section {
   padding-top: 8rem;
+}
+
+.the-restaurant-section--animation {
+  animation: theRestaurantSectionAnimation 1s ease-in;
 }
 
 .restaurant-container {
@@ -800,6 +820,17 @@ a {
   background-color: var(--tertiary-color);
 }
 
+@keyframes theRestaurantSectionAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
 /* ----------------------------------------------------------- */
 /* //////////// Section Restaurant IMG Components /////////////*/
 /* ----------------------------------------------------------- */
@@ -810,7 +841,7 @@ a {
   justify-content: flex-end;
   width: 100vw;
   height: 100vh;
-  background: url(./img/restaurant-interior-img-2.jpeg);
+  background: url(./img/restaurant-interior-img-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -897,6 +928,10 @@ a {
   color: var(--gray-color);
   font-size: 1.2rem;
   line-height: 1.7;
+}
+
+.footer--section__content--box-list li {
+  cursor: pointer;
 }
 
 .footer--section__content--box-list {
