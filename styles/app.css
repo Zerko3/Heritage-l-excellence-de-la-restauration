@@ -11,6 +11,8 @@ body {
   background-color: var(--tertiary-color);
 }
 
+/* TEST  */
+
 /* ----------------------------------------------------------- */
 /* //////////////////// Utility Components ////////////////////*/
 /* ----------------------------------------------------------- */
@@ -219,11 +221,11 @@ a {
 }
 
 .hero__main--heading {
-  animation: heroHeaderAnimation 1s ease-in;
+  animation: heroHeaderAnimation 5s;
 }
 
 .hero__main--span {
-  animation: heroHeaderSpanAnimation 1.5s ease-in;
+  animation: heroHeaderSpanAnimation 5s;
 }
 
 .hero__background--video--playing {
@@ -251,22 +253,37 @@ a {
 @keyframes heroHeaderAnimation {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+  }
+
+  70% {
+    opacity: 0;
+    /* transform: translateX(-10rem); */
   }
 
   80% {
-    transform: translateX(1rem);
+    opacity: 0;
+    /* transform: translateX(1rem); */
   }
 
   100% {
     opacity: 100;
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
 }
 
 @keyframes heroHeaderSpanAnimation {
   0% {
     opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+    /* transform: translateX(-10rem); */
+  }
+
+  80% {
+    opacity: 0;
+    /* transform: translateX(1rem); */
   }
 
   100% {
@@ -281,14 +298,30 @@ a {
 .section--restaurant {
   padding-top: 8rem;
   background-color: var(--tertiary-color);
+  position: relative;
+}
+
+.section--restaurant-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bcaf872b;
+  height: 100%;
+  width: 50vw;
 }
 
 .restaurant--container {
   padding: 0 3.2rem 0 3.2rem;
 }
 
+.restaurant__content__img--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .restaurant__content__img--box img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -464,13 +497,15 @@ a {
   align-items: center;
   justify-content: flex-start;
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 60%;
   left: 0;
   z-index: -2;
 }
 
 .menu__content__img--box img {
-  width: 60%;
+  width: 50%;
   height: auto;
   position: relative;
 }
@@ -841,12 +876,22 @@ a {
   justify-content: flex-end;
   width: 100vw;
   height: 100vh;
-  background: url(./img/restaurant-interior-img-2.jpg);
+  /* background: url(./img/restaurant-interior-img-2.jpg);
+
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat; */
+  /* background-size: cover; */
   position: relative;
   z-index: -2;
+}
+
+.restaurant-img-section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .restaurant-img-section--background-color {
@@ -854,7 +899,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 100vh;
   width: 50vw;
   z-index: -1;
 }
