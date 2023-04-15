@@ -19,14 +19,11 @@
   </head>
   <body>
     <header id="header">
-      <video
-        class="hero__background--video--playing"
-        autoplay
-        loop
-        muted
-        plays-inline
-      >
-        <source src="./styles/img/video/hero_video.mp4" type="video/mp4" />
+      <video class="hero__background--video--playing" autoplay muted loop>
+        <source
+          src="./styles/img/video/hero_video_lower_quality_2.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <nav id="navigation">
@@ -59,6 +56,7 @@
 
     <main>
       <section class="section--restaurant">
+        <div class="section--restaurant-background"></div>
         <div class="restaurant--container grid grid--2-cols grid--center-v">
           <div class="restaurant__content">
             <div class="restaurant__content__heading--box">
@@ -103,7 +101,11 @@
             </div>
           </div>
           <div class="restaurant__content__img--box">
-            <img src="./styles/img/chef-img-2.jpg" alt="Chef coocking." />
+            <img
+              src="./styles/img/chef-img-2.jpg"
+              loading="lazy"
+              alt="Chef coocking."
+            />
           </div>
         </div>
       </section>
@@ -143,6 +145,7 @@
           <div class="menu__content__img--box">
             <img
               src="./styles/img/food-img-4.jpg"
+              loading="lazy"
               alt="Food of the restaurant."
             />
           </div>
@@ -195,6 +198,7 @@
             <div class="chef-container__chef--box--img--box">
               <img
                 src="./styles/img/chef-img-1.jpg"
+                loading="lazy"
                 alt="Head chef of the restaurant."
               />
             </div>
@@ -236,6 +240,11 @@
       </section>
 
       <section class="restaurant-img-section">
+        <img
+          src="./styles/img/restaurant-interior-img-2.jpg"
+          loading="lazy"
+          alt="The interior of our restaurant."
+        />
         <div class="restaurant-img-section--background-color"></div>
         <div class="restaurant-img-section-container">
           <div class="restaurant-img-section-container__text--box">
