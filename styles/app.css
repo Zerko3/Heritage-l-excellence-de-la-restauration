@@ -257,17 +257,14 @@ a {
 
   70% {
     opacity: 0;
-    /* transform: translateX(-10rem); */
   }
 
   80% {
     opacity: 0;
-    /* transform: translateX(1rem); */
   }
 
   100% {
     opacity: 100;
-    /* transform: translateX(0); */
   }
 }
 
@@ -278,12 +275,10 @@ a {
 
   70% {
     opacity: 0;
-    /* transform: translateX(-10rem); */
   }
 
   80% {
     opacity: 0;
-    /* transform: translateX(1rem); */
   }
 
   100% {
@@ -498,7 +493,6 @@ a {
   justify-content: flex-start;
   position: absolute;
   height: 100%;
-  width: 100%;
   top: 60%;
   left: 0;
   z-index: -2;
@@ -877,11 +871,6 @@ a {
   justify-content: flex-end;
   width: 100vw;
   height: 100vh;
-  /* background: url(./img/restaurant-interior-img-2.jpg);
-
-  background-position: center;
-  background-repeat: no-repeat; */
-  /* background-size: cover; */
   position: relative;
   z-index: -2;
 }
