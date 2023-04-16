@@ -46,6 +46,10 @@
     margin-bottom: 2rem;
   }
 
+  .restaurant__content__text--para--text {
+    font-size: 1.8rem;
+  }
+
   .menu__content__text--box__main--heading {
     font-size: 5.2rem;
   }
@@ -89,6 +93,11 @@
     font-size: 3rem;
   }
 
+  .restaurant__content__text--box__main--heading {
+    margin-bottom: 8rem;
+    font-size: 3.6rem;
+  }
+
   .restaurant__content__text--box--heading {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -119,6 +128,11 @@
     font-size: 1.4rem;
     letter-spacing: 1rem;
   }
+
+  .restaurant__content__text--box__main--heading {
+    margin-bottom: 8rem;
+    font-size: 3.6rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -137,6 +151,15 @@
   .restaurant__content__heading--box__span--location,
   .heading-secondary {
     font-size: 2.4rem;
+  }
+
+  .restaurant__content__text--box__main--heading {
+    margin-bottom: 8rem;
+    font-size: 3.6rem;
+  }
+
+  .the-restaurant__content--btn {
+    font-size: 3rem;
   }
 }
 
@@ -195,6 +218,11 @@
   .chef__content__text--box__main--heading--box__span-right {
     width: 20%;
   }
+
+  .footer--section__content--box-para,
+  .footer--section__content--box-list li {
+    font-size: 1.4rem;
+  }
 }
 
 /* TODO: */
@@ -209,6 +237,15 @@
 
   .menu__content__img--box {
     left: 15%;
+  }
+
+  .restaurant__content__text--box__main--heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .the-restaurant__content--btn {
+    letter-spacing: 1rem;
   }
 }
 
@@ -229,5 +266,27 @@
   .chef__content__text--box__main--heading--box__span-left,
   .chef__content__text--box__main--heading--box__span-right {
     width: 0;
+  }
+
+  .restaurant__content__text--box__main--heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .restaurant__content__text--para--text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+
+  .the-restaurant__content--btn {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+
+  .footer--section__content--box-para,
+  .footer--section__content--box-list li {
+    font-size: 1.2rem;
   }
 }

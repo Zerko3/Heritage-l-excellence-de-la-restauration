@@ -12,8 +12,8 @@ const hamburgerLineThree = document.querySelector('.line-3');
 // Main body elements
 let video = document.querySelector('.hero__background--video--playing');
 let sectionAboutUs = document.querySelector('.section--restaurant');
-let menuMainHeading = document.querySelector('.section-menu');
-let chefMainHeading = document.querySelector('.chef-section');
+let menuSection = document.querySelector('.section-menu');
+let chefSection = document.querySelector('.chef-section');
 let theRestaurantSection = document.querySelector('.the-restaurant-section');
 
 let heroImage = document.createElement('heroImage');
@@ -70,11 +70,9 @@ observeElements(
   (target, visible) => {
     if (visible) {
       target.classList.add(`${target.classList[0]}__animated`);
-    } else {
-      target.classList.remove(`${target.classList[0]}__animated`);
     }
   },
-  0.1
+  0.05
 );
 
 observeElements(
@@ -82,11 +80,9 @@ observeElements(
   (target, visible) => {
     if (visible) {
       target.classList.add(`${target.classList[0]}--animation`);
-    } else {
-      target.classList.remove(`${target.classList[0]}--animation`);
     }
   },
-  0.1
+  0.05
 );
 
 observeElements(
@@ -94,11 +90,9 @@ observeElements(
   (target, visible) => {
     if (visible) {
       target.classList.add(`${target.classList[0]}--animation`);
-    } else {
-      target.classList.remove(`${target.classList[0]}--animation`);
     }
   },
-  0.1
+  0.05
 );
 
 observeElements(
@@ -108,7 +102,7 @@ observeElements(
       target.classList.add(`${target.classList[0]}--animation`);
     }
   },
-  0.1
+  0.05
 );
 
 // INITALIZATION OF THE PAGE
