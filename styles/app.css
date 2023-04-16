@@ -395,7 +395,7 @@ a {
 
 .restaurant__content__text--box--text {
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -554,7 +554,7 @@ a {
 
 .menu__content__text--para--text {
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   margin-bottom: 2rem;
   width: 70%;
@@ -710,10 +710,15 @@ a {
 .chef__content__above__text--para--text,
 .chef__content__chef__text--para--text {
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   margin-bottom: 2rem;
   width: 70%;
+}
+
+.chef__content__above__text--para--text {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .chef-container__chef--box--img--box {
@@ -901,7 +906,7 @@ a {
 
 .restaurant-img__content__text--para--text {
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.7;
   width: 40%;
 }

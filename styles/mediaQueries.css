@@ -41,13 +41,13 @@
   .chef__content__above__text--para--text,
   .chef__content__chef__text--para--text {
     color: var(--gray-color);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.7;
     margin-bottom: 2rem;
   }
 
   .restaurant__content__text--para--text {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .menu__content__text--box__main--heading {
