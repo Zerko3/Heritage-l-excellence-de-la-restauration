@@ -52,18 +52,6 @@ function observeElements(elements, callback, threshold) {
 }
 
 observeElements(
-  [video],
-  (target, visible) => {
-    if (!visible && !target.paused) {
-      target.pause();
-    } else {
-      target.play();
-    }
-  },
-  0.1
-);
-
-observeElements(
   document.querySelectorAll(
     '.restaurant__content__heading--box__main--heading, .restaurant__content__heading--box__span--emotion, .restaurant__content__heading--box__span--location'
   ),
