@@ -11,13 +11,12 @@ body {
   background-color: var(--tertiary-color);
 }
 
-/* TEST  */
-
 /* ----------------------------------------------------------- */
 /* //////////////////// Utility Components ////////////////////*/
 /* ----------------------------------------------------------- */
 
 :root {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: 'Playfair Display', serif;
 
