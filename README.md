@@ -13,3 +13,4 @@ The aim is to learn vanilla HTML, CSS and JS. This project was to showcase all t
 - Vanilla JavaScript.
 
 # Live demo
+https://heritage-zan.netlify.app/
