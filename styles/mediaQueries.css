@@ -3,6 +3,59 @@
     width: 1510px;
     margin: 0 auto;
   }
+
+  .hero__main--heading {
+    font-size: 5.5rem;
+  }
+
+  .navigation__img--logo img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .navigation__hamburger {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .line-1-clicked {
+    transform: rotateZ(-405deg) translate(-1.5rem, 1.2rem);
+  }
+
+  .line-3-clicked {
+    transform: rotateZ(405deg) translate(-1.5rem, -1.2rem);
+  }
+
+  .navigation__hamburger--links li {
+    font-size: 3rem;
+  }
+
+  .navigation__hamburger--links li a {
+    text-align: center;
+  }
+
+  .hero__main-text--heading-primary span {
+    font-size: 3rem;
+  }
+
+  .restaurant__content__heading--box__span--emotion,
+  .restaurant__content__heading--box__span--location,
+  .restaurant__content__heading--box__main--heading {
+    font-size: 4.4rem;
+  }
+
+  .restaurant__content__text--box--heading {
+    font-size: 3rem;
+  }
+
+  .restaurant__content__text--box--text,
+  .menu__content__text--para--text,
+  .chef__content__above__text--para--text,
+  .chef__content__chef__text--para--text,
+  .restaurant__content__text--para--text,
+  .restaurant-img__content__text--para--text {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 1500px) {
