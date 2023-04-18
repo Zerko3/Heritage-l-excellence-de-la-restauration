@@ -100,8 +100,6 @@ observeElements(
 // Scroll function
 /* //////////////////////////////////////////////// */
 
-// TODO:
-
 const scrollToFunction = function (e) {
   const targetLink = e.target;
   if (!targetLink.href) return;
