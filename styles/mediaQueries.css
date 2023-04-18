@@ -225,7 +225,6 @@
   }
 }
 
-/* TODO: */
 @media screen and (max-width: 750px) {
   .hero__main-text--heading-primary {
     top: 70%;
@@ -280,9 +279,9 @@
     width: 70%;
   }
 
-  .menu__content__text--para--text {
+  /* .menu__content__text--para--text {
     width: 100%;
-  }
+  } */
 
   .the-restaurant__content--btn {
     font-size: 2rem;
@@ -292,12 +291,45 @@
   .footer--section__content--box-para,
   .footer--section__content--box-list li {
     font-size: 1.2rem;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
+  .menu__content__text--box__main--heading--box__span-right,
+  .menu__content__text--box__main--heading--box__span-left {
+    width: 0;
+  }
+
+  .restaurant__content__text--para--text {
+    width: 100%;
+  }
+
+  .the-restaurant__content--btn {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .footer--section__content--box-para,
+  .footer--section__content--box-list li {
+    text-align: center;
+  }
+
   .hero__main-text--heading-primary {
     padding: 4rem 0 4rem 0;
+  }
+
+  .restaurant__content__heading--box {
+    text-align: center;
+  }
+
+  .restaurant__content__text--box {
+    padding: 0;
+  }
+
+  .restaurant__content--btn {
+    text-align: center;
+    font-size: 1.6rem;
   }
 
   .restaurant__content__text--para--text {
@@ -324,4 +356,159 @@
   .restaurant-img__content__text--para--text {
     width: 100%;
   }
+
+  .menu-container {
+    padding: 0;
+  }
+
+  .menu__content__text__para--box {
+    padding: 3.2rem;
+  }
+
+  .chef-container {
+    padding: 0;
+  }
+
+  .restaurant-container__content--box {
+    padding: 3.2rem;
+  }
+
+  .restaurant__content__heading--box {
+    text-align: center;
+  }
+
+  .menu__content__text__para--box,
+  .restaurant__content__text--box,
+  .chef-container {
+    padding: 0;
+  }
+
+  .restaurant-container__content--box {
+    padding: 3.2rem 3.2rem;
+  }
+
+  .restaurant__content__text--para--text {
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .the-restaurant__content--btn {
+    font-size: 1.4rem;
+  }
+
+  .footer-section-container {
+    padding: 0;
+  }
 }
+
+/* @media screen and (max-width: 410px) {
+  .menu__content__text--box__main--heading--box__span-right,
+  .menu__content__text--box__main--heading--box__span-left {
+    width: 0;
+  }
+
+  .restaurant__content__text--para--text {
+    width: 100%;
+  }
+
+  .the-restaurant__content--btn {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .footer--section__content--box-para,
+  .footer--section__content--box-list li {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero__main-text--heading-primary {
+    padding: 4rem 0 4rem 0;
+  }
+
+  .restaurant__content__heading--box {
+    text-align: center;
+  }
+
+  .restaurant__content__text--box {
+    padding: 0;
+  }
+
+  .restaurant__content--btn {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .restaurant__content__text--para--text {
+    width: 100%;
+  }
+
+  .restaurant-container__content__text--box {
+    gap: 1rem;
+  }
+
+  .the-restaurant__content--btn {
+    margin-top: 1rem;
+  }
+
+  .restaurant-img-section--background-color {
+    width: 100vw;
+  }
+
+  .restaurant-img-section-container__text--box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .restaurant-img__content__text--para--text {
+    width: 100%;
+  }
+
+  .menu-container {
+    padding: 0;
+  }
+
+  .menu__content__text__para--box {
+    padding: 3.2rem;
+  }
+
+  .chef-container {
+    padding: 0;
+  }
+
+  .restaurant-container__content--box {
+    padding: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .restaurant__content__heading--box {
+    text-align: center;
+  }
+
+  .menu__content__text__para--box,
+  .restaurant__content__text--box,
+  .chef-container {
+    padding: 0;
+  }
+
+  .restaurant-container__content--box {
+    padding: 3.2rem 3.2rem;
+  }
+
+  .restaurant__content__text--para--text {
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .the-restaurant__content--btn {
+    font-size: 1.4rem;
+  }
+} */
