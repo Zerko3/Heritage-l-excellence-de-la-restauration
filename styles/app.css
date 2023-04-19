@@ -101,12 +101,9 @@ a {
   position: fixed;
   width: 8rem;
   height: 8rem;
+  top: 2rem;
+  left: 3rem;
 }
-
-/* .fa-utensils {
-  font-size: 5rem;
-  color: var(--tertiary-color);
-} */
 
 .navigation__hamburger {
   display: flex;
