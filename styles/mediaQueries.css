@@ -13,19 +13,6 @@
     height: 10rem;
   }
 
-  .navigation__hamburger {
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .line-1-clicked {
-    transform: rotateZ(-405deg) translate(-1.5rem, 1.2rem);
-  }
-
-  .line-3-clicked {
-    transform: rotateZ(405deg) translate(-1.5rem, -1.2rem);
-  }
-
   .navigation__hamburger--links li {
     font-size: 3rem;
   }
@@ -55,6 +42,12 @@
   .restaurant__content__text--para--text,
   .restaurant-img__content__text--para--text {
     font-size: 1.8rem;
+  }
+
+  .section--restaurant-background,
+  .chef-section--background-color,
+  .restaurant-img-section--background-color {
+    width: 50%;
   }
 }
 
